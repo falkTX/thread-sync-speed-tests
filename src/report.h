@@ -17,6 +17,7 @@
 
 #include <stdio.h>
 #include <unistd.h>
+#include <inttypes.h>
 
 /* just a convenience function so that all the different tests output
  * in the same format. */
@@ -24,6 +25,7 @@ static inline void
 report(time_t diff_seconds, long diff_nsec)
 {
 	int64_t nsec = diff_nsec + (diff_seconds * 1000000000);
-	printf("%ldns [%fns / iteration]\n", nsec,
+	printf("%f seconds [%fns / iteration]\n",
+			diff_seconds + ((double) diff_nsec / 1e9),
 			(double) nsec / (double) ITERATIONS);
 }
