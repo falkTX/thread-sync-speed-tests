@@ -1,0 +1,10 @@
+to build:
+
+    $ make
+
+to run the tests:
+
+    $ make test
+
+questions, comments, and/or field recordings to wrl@illest.net
+thx
