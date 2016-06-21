@@ -14,6 +14,7 @@ TARGETS += $(OUTDIR)/pipe_nonblock
 TARGETS += $(OUTDIR)/eventfd_blocking
 TARGETS += $(OUTDIR)/eventfd_nonblock
 TARGETS += $(OUTDIR)/futex
+TARGETS += $(OUTDIR)/futex-atomic
 
 .PHONY: all test clean
 
